@@ -1,5 +1,6 @@
 // Thực hiện tạo một mảng chứa tên các sinh viên trong trường đại học
 let danhSachSinhVien = ["Hoa", "Vân", "Sang", "Nguyên", "Khải", "Vân"]
+
 // Lấy độ dài mảng
 let doDaiMang = danhSachSinhVien.length
 console.log(doDaiMang)
@@ -26,6 +27,7 @@ document.querySelector(".btn-dark").onclick = () => {
 document.querySelector(".btn-success").onclick = () => {
   let tong = 0
   let demChiaHetChoHai = 0
+
   for (let i = 0; i < arrNumber.length; i++) {
     // Tính tổng
     tong += arrNumber[i]
@@ -34,6 +36,7 @@ document.querySelector(".btn-success").onclick = () => {
       demChiaHetChoHai++
     }
   }
+
   console.log(tong)
   console.log(demChiaHetChoHai)
 }
@@ -51,7 +54,7 @@ for (let i = 0; i < danhSachSinhVien; i++) {
     break
   }
 }
-console.log(viTriNguyen)
+console.log("viTriNguyen", viTriNguyen)
 
 let viTriVan = -1
 for (let i = doDaiMang - 1; i >= 0; i--) {
@@ -60,4 +63,4 @@ for (let i = doDaiMang - 1; i >= 0; i--) {
     break
   }
 }
-console.log(viTriVan)
+console.log("viTriVan", viTriVan)
